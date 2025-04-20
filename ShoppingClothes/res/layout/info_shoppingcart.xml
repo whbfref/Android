@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+  <RelativeLayout 
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="2dp"
+      android:layout_marginBottom="5dp"
+      >
+    <CheckBox
+        android:id="@+id/info_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/info_imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp" />
+
+    <ImageView
+        android:id="@+id/info_imageView1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/info_checkBox"
+        android:src="@drawable/shirt1" />
+
+    <TextView
+        android:id="@+id/info_ClothesName"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/info_imageView1"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="2014韩版清凉飘逸雪纺拼接露肩修身上衣T恤" 
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/info_jiage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="35dp"
+        android:text="￥"
+        android:textColor="#E066FF"
+        android:textSize="15sp" />
+
+     <TextView
+         android:id="@+id/info_Price"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/info_jiage1"
+         android:layout_alignLeft="@+id/info_jiage1"
+         android:layout_toRightOf="@+id/info_jiage"
+         android:layout_marginLeft="15dp"
+         android:text="30"
+         android:textSize="12sp" />
+
+      <Button
+          android:id="@+id/info_EditBye"
+          android:layout_width="28dp"
+          android:layout_height="20dp"
+          android:layout_alignBottom="@+id/info_imageView1"
+          android:layout_centerHorizontal="true"
+          android:background="#F0F0F0"
+          android:ems="10"
+          android:visibility="invisible"
+          android:clickable="true"
+          android:gravity="center"
+          android:text="1"
+          android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/info_rubbish"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignRight="@+id/info_ClothesName"
+        android:layout_alignTop="@+id/info_EditBye"
+        android:focusable="false"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:background="@drawable/rubbishbin" />
+
+    <Button
+        android:id="@+id/info_edit"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/info_jiage1"
+        android:layout_alignTop="@+id/info_rubbish"
+        android:background="#00000000"
+        android:text="编辑"
+        android:focusable="false"
+        android:clickable="true"
+        android:textColor="#FFA500"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/info_view1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/info_checkBox"
+        android:background="#EDEDED" />
+      
+    <TextView
+        android:id="@+id/info_shuliang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/shuliang"
+        android:layout_alignLeft="@+id/info_Price"
+        android:text="x"
+        android:textSize="12sp" />
+    
+     <TextView
+        android:id="@+id/info_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/shuliang"
+        android:layout_alignBottom="@+id/shuliang"
+        android:layout_toRightOf="@+id/info_shuliang"
+        android:lines="1"
+        android:ellipsize="end"
+        android:text="1"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/shuliang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/info_rubbish"
+        android:layout_below="@+id/info_EditBye"
+        android:layout_marginTop="16dp"
+        android:text="数量:" />
+
+     <TextView
+         android:id="@+id/heji"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/shuliang"
+         android:layout_below="@+id/shuliang"
+         android:text="合计:" />
+
+       <TextView
+           android:id="@+id/info_all"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/heji"
+           android:layout_alignLeft="@+id/info_shuliang"
+           android:text="30"
+           android:ellipsize="end"
+           android:lines="1"
+           android:textColor="#FFA500"
+           android:textSize="13sp" />
+
+       <TextView
+           android:id="@+id/info_jiage"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/info_all"
+           android:layout_alignLeft="@+id/info_edit"
+           android:text="￥"
+           android:textColor="#E066FF"
+           android:textSize="15sp" />
+	</RelativeLayout>
+</RelativeLayout>

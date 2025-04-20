@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="#F0F0F0">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:background="#FFFFFF"
+        android:text="编辑信息"
+        android:textSize="22sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentLeft="true"
+        android:background="#CFCFCF"
+        android:layout_below="@+id/textView1" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:background="#FFFFFF"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/edit_infomation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginLeft="10dp"
+        android:background="@null"
+        android:ems="10"
+        android:maxLength="20"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/edit_infomation_clear"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignBaseline="@+id/edit_infomation"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/clear" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_infomation_text"
+        android:layout_alignBottom="@+id/edit_infomation_text"
+        android:layout_toLeftOf="@+id/edit_infomation_clear"
+        android:text="/20" />
+
+    <TextView
+        android:id="@+id/edit_infomation_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_toLeftOf="@+id/textView3"
+        android:text="" />
+
+    <Button
+        android:id="@+id/edit_infomation_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFFFF"
+        android:textColor="#8470FF"
+        android:text="完成" />
+	
+</RelativeLayout>

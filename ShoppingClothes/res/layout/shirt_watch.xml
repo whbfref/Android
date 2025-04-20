@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" 
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/shirt_watch_imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/shirt1" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/shirt_watch_imageView"
+        android:text="价格: "
+        android:textSize="18sp" />
+    
+    
+
+    <TextView
+        android:id="@+id/shirt_watch_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="30"
+        android:textColor="#FF8C69"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/shirt_watch_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shirt_watch_imageView"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="2014百搭镂空花纹褶皱拼接修身短袖亚麻女衬衫"
+        android:textColor="#CDC9C9"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/shirt_watch_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#EDEDED" />
+
+    <Button
+        android:id="@+id/Thing_car"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_alignRight="@+id/view1"
+        android:layout_below="@+id/view1"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FF8C69"
+        android:text="加入购物车"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/Thing_buy"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_alignBaseline="@+id/Thing_car"
+        android:layout_alignBottom="@+id/Thing_car"
+        android:layout_alignLeft="@+id/shirt_watch_name"
+        android:background="#FFE7BA"
+         android:textColor="#FF8C69"
+        android:text="立即购买" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="54dp"
+        android:layout_toRightOf="@+id/shirt_watch_imageView"
+        android:text="库存:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/shirt_watch_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_toRightOf="@+id/TextView01"
+        android:text="100"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/shirt_watch_price"
+        android:layout_alignBottom="@+id/shirt_watch_price"
+        android:layout_alignRight="@+id/Thing_car"
+        android:layout_toRightOf="@+id/shirt_watch_price"
+        android:text="元"
+        android:textSize="15sp" />
+
+</RelativeLayout>

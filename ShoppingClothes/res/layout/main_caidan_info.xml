@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="#F0F0F0">
+
+    <Button
+        android:id="@+id/info_cart"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="86dp"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF"
+        android:textSize="20sp"
+        android:lines="1"
+        android:text="      ☆购物车" />
+    <Button
+        android:id="@+id/info_order"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/info_cart" 
+        android:gravity="center_vertical"
+        android:background="#FFFFFF"
+        android:textSize="20sp"
+        android:text="      ☆我的订单"/>
+
+    <View
+        android:id="@+id/info_View1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/info_cart"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/info_cart"
+        android:layout_alignBottom="@+id/info_cart"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp"
+        android:text="〉" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/info_order"
+        android:layout_alignBottom="@+id/info_order"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp"
+        android:text="〉" />
+
+    <Button
+        android:id="@+id/info_infomation"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFFFF"
+        android:textSize="20sp"
+        android:text="☆个人信息" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/info_infomation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/info_infomation"
+        android:src="@drawable/touxiang" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/info_infomation"
+        android:layout_alignBottom="@+id/info_infomation"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="〉"
+        android:textSize="20sp" />
+
+</RelativeLayout>

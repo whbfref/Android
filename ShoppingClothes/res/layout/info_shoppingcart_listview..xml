@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/info_list_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#BDBDBD"
+        android:textSize="25sp"
+        android:text="购物车" />
+
+    <View
+        android:id="@+id/View1"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_below="@+id/info_list_textView1"
+        android:layout_centerHorizontal="true"
+        android:background="#CCCCCC" />
+
+    <ListView
+        android:id="@+id/info_shoppingcart_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/View1"
+        android:divider="#F0F0F0"
+        android:background="#FFFFFF"
+        android:dividerHeight="15dp"
+        android:layout_centerHorizontal="true" 
+        android:layout_marginBottom="45dp">
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#F0F0F0" >
+
+        <TextView
+            android:id="@+id/info_list_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="92dp"
+            android:textSize="15sp"
+            android:text="合计:" />
+
+        <TextView
+            android:id="@+id/info_shoppingcart_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/info_list_textView2"
+            android:layout_alignBaseline="@+id/info_list_textView2"
+            android:layout_alignBottom="@+id/info_list_textView2"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFA500"
+            android:textSize="21sp"
+            android:lines="1"
+            android:text="30" />
+
+        <Button
+            android:id="@+id/info_shoppingcart_buy"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="结算"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/selectlr">
+
+    <Button
+        android:id="@+id/Select_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="61dp"
+        android:layout_marginLeft="25dp"
+        android:background="@android:color/transparent"
+        android:text="点击直接登陆"
+        android:textColor="#C1C1C1"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/Select_zhuce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="78dp"
+        android:background="@android:color/transparent"
+        android:text="点击前往注册"
+        android:textColor="#C1C1C1"
+        android:textSize="30sp" />
+
+</RelativeLayout>

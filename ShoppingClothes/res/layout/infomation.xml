@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0F0F0" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:text="个人信息"
+        android:textSize="22sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:background="#000000" />
+
+    <Button
+        android:id="@+id/infomatin_zhanghaoButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="34dp"
+        android:background="#FFFFFFFF"
+        android:gravity="left|center_vertical"
+        android:text="   账号" />
+
+    <TextView
+        android:id="@+id/infomatin_zhanghaoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/infomatin_zhanghaoButton"
+        android:layout_alignBottom="@+id/infomatin_zhanghaoButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:text=""
+        android:textColor="#63B8FF" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/infomatin_zhanghaoButton"
+        android:layout_alignBottom="@+id/infomatin_zhanghaoButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:text="〉" />
+
+    <Button
+        android:id="@+id/infomatin_nameButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/infomatin_zhanghaoButton"
+        android:layout_marginTop="32dp"
+        android:background="#FFFFFFFF"
+        android:gravity="left|center_vertical"
+        android:text="   姓名" />
+
+    <TextView
+        android:id="@+id/infomatin_nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/infomatin_nameButton"
+        android:layout_alignBottom="@+id/infomatin_nameButton"
+        android:layout_alignRight="@+id/infomatin_zhanghaoText"
+        android:text=""
+        android:textColor="#63B8FF" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/infomatin_nameButton"
+        android:layout_alignBottom="@+id/infomatin_nameButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:text="〉" />
+
+    <Button
+        android:id="@+id/infomatin_emailButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/infomatin_zhanghaoButton"
+        android:layout_marginTop="80dp"
+        android:background="#FFFFFFFF"
+        android:gravity="left|center_vertical"
+        android:text="   邮箱" />
+
+    <TextView
+        android:id="@+id/infomatin_emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/infomatin_emailButton"
+        android:layout_alignBottom="@+id/infomatin_emailButton"
+        android:layout_alignRight="@+id/infomatin_nameText"
+        android:text=""
+        android:textColor="#63B8FF" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/infomatin_emailButton"
+        android:layout_alignBottom="@+id/infomatin_emailButton"
+        android:layout_alignLeft="@+id/textView3"
+        android:text="〉" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/infomatin_nameButton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#CCCCCC" />
+
+    <Button
+        android:id="@+id/infomatin_telButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/infomatin_emailButton"
+        android:background="#FFFFFFFF"
+        android:gravity="left|center_vertical"
+        android:text="   电话" />
+
+    <TextView
+        android:id="@+id/infomatin_telText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/infomatin_telButton"
+        android:layout_alignBottom="@+id/infomatin_telButton"
+        android:layout_alignRight="@+id/infomatin_nameText"
+        android:text=""
+        android:textColor="#63B8FF" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/infomatin_telButton"
+        android:layout_alignBottom="@+id/infomatin_telButton"
+        android:layout_alignLeft="@+id/TextView01"
+        android:text="〉" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignTop="@+id/infomatin_telButton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="#CCCCCC" />
+
+</RelativeLayout>

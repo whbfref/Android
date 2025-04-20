@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+ <!-- 验证登陆 -->
+ <servlet>
+<servlet-name>LoginServlet</servlet-name>
+<servlet-class>shopping.LoginServlet.LoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>LoginServlet</servlet-name>
+<url-pattern>/LoginServlet</url-pattern>
+</servlet-mapping>
+
+<!-- 注册 -->
+  <servlet>
+<servlet-name>RegistServlet</servlet-name>
+<servlet-class>shopping.LoginServlet.RegistServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>RegistServlet</servlet-name>
+<url-pattern>/RegistServlet</url-pattern>
+</servlet-mapping>
+<!-- shirts_search -->
+ <servlet>
+<servlet-name>ShirtSearchServlet</servlet-name>
+<servlet-class>shopping.search.shirt_search</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ShirtSearchServlet</servlet-name>
+<url-pattern>/ShirtSearchServlet</url-pattern>
+</servlet-mapping>
+<!-- 加入购物车 -->
+ <servlet>
+<servlet-name>shopping_car</servlet-name>
+<servlet-class>shopping.putIncar.shopping_car</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>shopping_car</servlet-name>
+<url-pattern>/shopping_car</url-pattern>
+</servlet-mapping>
+
+<!-- 访问购物车 -->
+<servlet>
+	<servlet-name>shopping_catSearch</servlet-name>
+	<servlet-class>shopping.putIncar.shopping_catSearch</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>shopping_catSearch</servlet-name>
+	<url-pattern>/shopping_catSearch</url-pattern>
+</servlet-mapping>
+<!-- 修改购物车 -->
+<servlet>
+	<servlet-name>shopping_changeCart</servlet-name>
+	<servlet-class>shopping.putIncar.shopping_changeCart</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>shopping_changeCart</servlet-name>
+	<url-pattern>/shopping_changeCart</url-pattern>
+</servlet-mapping>
+<!-- 读取订单 -->
+<servlet>
+	<servlet-name>shopping_readOrder</servlet-name>
+	<servlet-class>shopping.putIncar.shopping_readOrder</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>shopping_readOrder</servlet-name>
+	<url-pattern>/shopping_readOrder</url-pattern>
+</servlet-mapping>
+<!-- 选择搜索 -->
+<servlet>
+	<servlet-name>search_clothes</servlet-name>
+	<servlet-class>shopping.search.search_clothes</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>search_clothes</servlet-name>
+	<url-pattern>/search_clothes</url-pattern>
+</servlet-mapping>
+<!-- 儿童装搜索 -->
+<servlet>
+	<servlet-name>search_chilren</servlet-name>
+	<servlet-class>shopping.search.search_chilren</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>search_chilren</servlet-name>
+	<url-pattern>/search_chilren</url-pattern>
+</servlet-mapping>
+<!-- 个人信息获取 -->
+<servlet>
+	<servlet-name>getInfo</servlet-name>
+	<servlet-class>infomation.getInfo</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>getInfo</servlet-name>
+	<url-pattern>/getInfo</url-pattern>
+</servlet-mapping>
+
+
+
+<!-- Jsp验证登陆 -->
+<servlet>
+	<servlet-name>jsp_loginServlet</servlet-name>
+	<servlet-class>zJSPServlet.jsp_loginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>jsp_loginServlet</servlet-name>
+	<url-pattern>/jsp_loginServlet</url-pattern>
+</servlet-mapping>
+<!-- Jsp处理table1 -->
+<servlet>
+	<servlet-name>chulitable1</servlet-name>
+	<servlet-class>zJSPServlet.chulitable1</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>chulitable1</servlet-name>
+	<url-pattern>/chulitable1</url-pattern>
+</servlet-mapping>
+<!-- Jsp处理搜索订单 -->
+<servlet>
+	<servlet-name>JspsearchOrder</servlet-name>
+	<servlet-class>zJSPServlet.JspsearchOrder</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>JspsearchOrder</servlet-name>
+	<url-pattern>/JspsearchOrder</url-pattern>
+</servlet-mapping>
+</web-app>

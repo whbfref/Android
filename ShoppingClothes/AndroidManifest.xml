@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shoppingclothes"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity android:name="shopping.clothes.background"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="shopping.clothes.ShoppingLogin" />
+         <activity android:name="background.focus.MainFocusActivity" 
+          		   android:theme = "@style/Title"/>
+         <activity android:name="background.focus.Main_informatin" 
+          		   android:theme = "@style/Title"/>
+         <activity android:name="background.focus.MainActivity" />
+         <activity android:name="shopping.clothes.selectLR" />
+         <activity android:name="shopping.clothes.shopping_Regist" />
+         <activity android:name="search.clothes.search_shirt" />
+         <activity android:name="search.clothes.search_shirts" />
+         <activity android:name="search.clothes.search_watch" 
+           		   android:label="@string/app_name"
+                   android:theme = "@style/Title"/>
+      	 <activity android:name="mianinfo.information.info_cart" />
+      	 <activity android:name="mianinfo.information.info_order" />
+      	 <activity android:name="search.clothes.clothes_search" />
+      	 <activity android:name="search.clothes.search_children" />
+      	 <activity android:name="mianinfo.information.info_PersonInfo" />
+      	 <activity android:name="mianinfo.information.info_EditInfomation" />
+      	 
+      	 
+    </application>
+	<uses-permission android:name="android.permission.INTERNET" />
+</manifest>
