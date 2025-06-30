@@ -285,7 +285,7 @@ button.setOnTouchListener(new OnTouchListener() {
 1. **Activity生命周期管理**和**Intent导航**
 2. **自定义UI组件**和**触摸事件处理**
 3. **HTTP网络通信**和**异步任务处理**
-4. **数据持久化**技术（SharedPreferences）
+4. **数据持久化**技术
 5. **ListView适配器模式**和**数据绑定**
 6. **资源管理**和**多屏幕适配**
 7. **客户端-服务端架构**设计
